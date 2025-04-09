@@ -1,0 +1,104 @@
+<div class="form-container">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Ejercicio: </label>
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="exercise.name"
+        [ngModelOptions]="{ standalone: true }"
+        placeholder="Ej: Press plano"
+        required
+      />
+    </div>
+
+    <div>
+      <label>Numero de series: </label>
+      <select
+        name="sets"
+        [(ngModel)]="exercise.sets"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option *ngFor="let set of sets" [value]="set">{{ set }}</option>
+      </select>
+    </div>
+    <div>
+      <label>Numero de repeticiones: </label>
+      <select
+        name="reps"
+        [(ngModel)]="exercise.reps"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option *ngFor="let rep of reps" [value]="rep">{{ rep }}</option>
+        <option>Fallo</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Pausa: </label>
+      <select
+        name="min"
+        [(ngModel)]="exercise.pause.min"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option *ngFor="let min of minutes" [value]="min">
+          {{ min }}
+        </option>
+      </select>
+      <span> min </span>
+
+      <select
+        name="secs"
+        [(ngModel)]="exercise.pause.sec"
+        [ngModelOptions]="{ standalone: true }"
+      >
+        <option *ngFor="let sec of seconds" [value]="sec">{{ sec }}</option>
+      </select>
+      <span> seg </span>
+    </div>
+
+    <div>
+      <label for="peso">Peso: </label>
+      <input
+        type="number"
+        name="weight"
+        [(ngModel)]="exercise.weight"
+        [ngModelOptions]="{ standalone: true }"
+        placeholder="Ej: 2.5"
+      />
+      <span>KG</span>
+    </div>
+    <button type="submit" (click)="onNewExercise()">Guardar</button>
+  </form>
+</div>
+<div class="routine-table" *ngIf="rutina.ejercicios.length > 0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Ejercicio</th>
+        <th scope="col">Series</th>
+        <th scope="col">Repeticiones</th>
+        <th scope="col">Pausa</th>
+        <th scope="col">Peso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
+        <th scope="row">{{ exercise.name }}</th>
+        <td>{{ exercise.sets }}</td>
+        <td>{{ exercise.reps }}</td>
+        <td>{{ exercise.pause.min }}:{{ exercise.pause.sec }}</td>
+        <td>{{ exercise.weight }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <label for="nombre">Nombre rutina: </label>
+  <input
+    type="text"
+    name="nombre"
+    [(ngModel)]="rutina.name"
+    [ngModelOptions]="{ standalone: true }"
+    placeholder="Ej: Hipertrofia"
+  />
+  <button (click)="onSaveRoutine()">Guardar rutina</button>
+</div>

@@ -1,0 +1,41 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px black;
+  width: 500px;
+}
+
+.routine-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.routine-table > button {
+  width: fit-content;
+}
+
+table {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+thead {
+  background-color: gray;
+}
+
+tbody > tr > th {
+  background-color: rgb(202, 202, 202);
+  flex-direction: row;
+}
