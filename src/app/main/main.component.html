@@ -77,7 +77,6 @@
       <tr>
         <th scope="col">Ejercicio</th>
         <th scope="col">Series</th>
-        <th scope="col">Repeticiones</th>
         <th scope="col">Pausa</th>
         <th scope="col">Peso</th>
       </tr>
@@ -85,10 +84,9 @@
     <tbody>
       <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
         <th scope="row">{{ exercise.name }}</th>
-        <td>{{ exercise.sets }}</td>
-        <td>{{ exercise.reps }}</td>
+        <td>{{ exercise.sets }}x{{ exercise.reps }}</td>
         <td>{{ exercise.pause.min }}:{{ exercise.pause.sec }}</td>
-        <td>{{ exercise.weight }}</td>
+        <td>{{ exercise.weight }}KG</td>
       </tr>
     </tbody>
   </table>

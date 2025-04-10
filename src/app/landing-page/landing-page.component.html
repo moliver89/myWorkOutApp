@@ -1,0 +1,23 @@
+<div>
+  <label>Seleccionar una rutina predeterminada: </label>
+  <select (change)="seleccionarRutina($event)">
+    <option *ngFor="let rutina of rutinasDisponibles" [value]="rutina.archivo">
+      {{ rutina.nombre }}
+    </option>
+  </select>
+  <label>Cargar rutina: </label>
+  <input type="file" (change)="cargarRutina($event)" accept=".json" />
+  <p>O bien puedes:</p>
+  <button (click)="onNewRoutine()">Crear nueva rutina</button>
+</div>
+<!-- Mostramos la rutina cargada -->
+<div *ngIf="rutinaSeleccionada">
+  <h3>{{ rutinaSeleccionada.nombre }}</h3>
+  <ul>
+    <li *ngFor="let ejercicio of rutinaSeleccionada.ejercicios">
+      {{ ejercicio.name }} - {{ ejercicio.sets }}x{{ ejercicio.reps }} ({{
+        ejercicio.weight
+      }}kg)
+    </li>
+  </ul>
+</div>

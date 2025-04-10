@@ -1,0 +1,21 @@
+* {
+  padding: 1px;
+  margin: 2px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: aqua;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px black;
+}
+
+select {
+  width: 17rem;
+}
