@@ -1,4 +1,5 @@
 [
   { "nombre": "Adaptacion", "archivo": "adaptacion.json" },
-  { "nombre": "Mi rutina", "archivo": "Mi rutina.json" }
+  { "nombre": "Mi rutina", "archivo": "Mi rutina.json" },
+  { "nombre": "Hipertrofia", "archivo": "hipertrofia.json" }
 ]

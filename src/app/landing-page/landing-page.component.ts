@@ -53,6 +53,7 @@ export class LandingPageComponent {
         const json = JSON.parse(reader.result as string);
         this.rutina = new Rutina(json.name, json.ejercicios);
         console.log('Rutina cargada:', this.rutina);
+        this.rutinaSeleccionada = this.rutina;
       } catch (error) {
         console.error('Error al cargar el archivo JSON', error);
       }

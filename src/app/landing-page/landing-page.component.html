@@ -1,6 +1,7 @@
 <div>
   <label>Seleccionar una rutina predeterminada: </label>
   <select (change)="seleccionarRutina($event)">
+    <option selected>Seleccionar rutina</option>
     <option *ngFor="let rutina of rutinasDisponibles" [value]="rutina.archivo">
       {{ rutina.nombre }}
     </option>

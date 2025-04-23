@@ -1,0 +1,95 @@
+{
+  "name": "Hipertrofia",
+  "ejercicios": [
+    {
+      "name": "Prensa",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 80
+    },
+    {
+      "name": "Cuadriceps",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 30
+    },
+    {
+      "name": "Isquiotibiales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 20
+    },
+    {
+      "name": "Press plano",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 60
+    },
+    {
+      "name": "Peck deck",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 45
+    },
+    {
+      "name": "Dorsales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 50
+    },
+    {
+      "name": "Vuelos laterales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 8
+    },
+    {
+      "name": "Biceps con mancuernas",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 12
+    },
+    {
+      "name": "Triceps soga",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": 30
+      },
+      "weight": 35
+    }
+  ]
+}
