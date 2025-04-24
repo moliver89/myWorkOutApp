@@ -38,7 +38,6 @@ export class LandingPageComponent {
     const ruta = `assets/fixtures/${nombreArchivo}`;
     this.http.get(ruta).subscribe((data) => {
       this.rutinaSeleccionada = data;
-      console.log('Rutina cargada:', this.rutinaSeleccionada);
       // Guardamos la rutina en el servicio antes de navegar
       this.rutinaService.setRutina(this.rutinaSeleccionada);
       // Navegamos
@@ -61,7 +60,6 @@ export class LandingPageComponent {
       try {
         const json = JSON.parse(reader.result as string);
         this.rutina = new Rutina(json.name, json.ejercicios);
-        console.log('Rutina cargada:', this.rutina);
         this.rutinaSeleccionada = this.rutina;
         this.rutinaService.setRutina(this.rutinaSeleccionada);
         this.router.navigate(['/showrutine']);
