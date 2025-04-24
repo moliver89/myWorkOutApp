@@ -1,0 +1,24 @@
+<div *ngIf="rutina; else elseBlock">
+  <h2>{{ rutina.name }}</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Ejercicio</th>
+        <th scope="col">Series</th>
+        <th scope="col">Pausa</th>
+        <th scope="col">Peso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
+        <th scope="row">{{ exercise.name }}</th>
+        <td>{{ exercise.sets }}x{{ exercise.reps }}</td>
+        <td>{{ exercise.pause.min }}:{{ exercise.pause.sec }} min</td>
+        <td>{{ exercise.weight }}KG</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ng-template #elseBlock>
+  <p>Este contenido se mostrará si la condición es falsa.</p>
+</ng-template>

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Rutina } from '../models/rutina';
+import { RutinaService } from '../services/rutina.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -14,7 +15,11 @@ export class LandingPageComponent {
   rutinasDisponibles: { nombre: string; archivo: string }[] = [];
   rutinaSeleccionada: any = null;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    private rutinaService: RutinaService
+  ) {}
 
   ngOnInit(): void {
     this.http
@@ -34,6 +39,10 @@ export class LandingPageComponent {
     this.http.get(ruta).subscribe((data) => {
       this.rutinaSeleccionada = data;
       console.log('Rutina cargada:', this.rutinaSeleccionada);
+      // Guardamos la rutina en el servicio antes de navegar
+      this.rutinaService.setRutina(this.rutinaSeleccionada);
+      // Navegamos
+      this.router.navigate(['/showrutine']);
     });
   }
 
@@ -54,6 +63,8 @@ export class LandingPageComponent {
         this.rutina = new Rutina(json.name, json.ejercicios);
         console.log('Rutina cargada:', this.rutina);
         this.rutinaSeleccionada = this.rutina;
+        this.rutinaService.setRutina(this.rutinaSeleccionada);
+        this.router.navigate(['/showrutine']);
       } catch (error) {
         console.error('Error al cargar el archivo JSON', error);
       }

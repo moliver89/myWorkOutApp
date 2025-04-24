@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShowrutineComponent } from './showrutine/showrutine.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     MainComponent,
     LandingPageComponent,
+    ShowrutineComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

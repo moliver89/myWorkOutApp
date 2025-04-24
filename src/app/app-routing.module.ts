@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ShowrutineComponent } from './showrutine/showrutine.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'nuevarutina',
     component: MainComponent,
+  },
+  {
+    path: 'showrutine',
+    component: ShowrutineComponent,
   },
 ];
 
