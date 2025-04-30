@@ -21,3 +21,28 @@ tbody > tr > th {
   background-color: rgb(202, 202, 202);
   flex-direction: row;
 }
+
+input {
+  width: 100%;
+  max-width: 120px;
+  box-sizing: border-box;
+}
+input[type="number"] {
+  width: 100%;
+  max-width: 50px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .rutina-container {
+    max-width: 90%;
+  }
+  table {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  button {
+    display: flex;
+    align-items: center;
+  }
+}
