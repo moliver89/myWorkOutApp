@@ -10,14 +10,68 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
-        <th scope="row">{{ exercise.name }}</th>
-        <td>{{ exercise.sets }}x{{ exercise.reps }}</td>
-        <td>{{ exercise.pause.min }}:{{ exercise.pause.sec }} min</td>
-        <td>{{ exercise.weight }}KG</td>
-      </tr>
+      <ng-container *ngIf="!editEnable">
+        <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
+          <th scope="row">{{ exercise.name }}</th>
+          <td>{{ exercise.sets }}x{{ exercise.reps }}</td>
+          <td>{{ exercise.pause.min }}:{{ exercise.pause.sec }} min</td>
+          <td>{{ exercise.weight }}KG</td>
+          <button (click)="onEdit()">✏️</button>
+        </tr>
+      </ng-container>
+      <ng-container *ngIf="editEnable">
+        <tr *ngFor="let exercise of rutina.ejercicios; let i = index">
+          <th scope="row">
+            <input
+              type="text"
+              placeholder="{{ exercise.name }}"
+              [(ngModel)]="exercise.name"
+              name="name-{{ i }}"
+            />
+          </th>
+          <td>
+            <input
+              type="number"
+              placeholder="{{ exercise.sets }}"
+              [(ngModel)]="exercise.sets"
+              name="sets-{{ i }}"
+            /><input
+              type="number"
+              placeholder="{{ exercise.reps }}"
+              [(ngModel)]="exercise.reps"
+              name="reps-{{ i }}"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="{{ exercise.pause.min }}"
+              [(ngModel)]="exercise.pause.min"
+              name="pause-min-{{ i }}"
+            />:<input
+              type="text"
+              placeholder="{{ exercise.pause.sec }}"
+              [(ngModel)]="exercise.pause.sec"
+              name="pause-sec-{{ i }}"
+            />
+            min
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="{{ exercise.weight }}"
+              [(ngModel)]="exercise.weight"
+              name="weight-{{ i }}"
+            />KG
+          </td>
+          <button (click)="onEditDone()">✅</button>
+        </tr>
+      </ng-container>
     </tbody>
   </table>
+  <ng-container *ngIf="rutinaEditada">
+    <button (click)="descargarRutina()">⬇️ Descargar rutina actualizada</button>
+  </ng-container>
 </div>
 <ng-template #elseBlock>
   <p>Rutina no cargada intenta de nuevo.</p>

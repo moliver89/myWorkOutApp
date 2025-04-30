@@ -40,6 +40,8 @@ export class LandingPageComponent {
       this.rutinaSeleccionada = data;
       // Guardamos la rutina en el servicio antes de navegar
       this.rutinaService.setRutina(this.rutinaSeleccionada);
+      // La guardamos en Local Storage para no perderla al actualizar
+      localStorage.setItem('rutina', JSON.stringify(this.rutinaSeleccionada));
       // Navegamos
       this.router.navigate(['/showrutine']);
     });
@@ -58,10 +60,15 @@ export class LandingPageComponent {
 
     reader.onload = () => {
       try {
+        // Leemos y parseamos el archivo de rutina cargado
         const json = JSON.parse(reader.result as string);
         this.rutina = new Rutina(json.name, json.ejercicios);
         this.rutinaSeleccionada = this.rutina;
+        // Guardamos la rutina antes de navegar
         this.rutinaService.setRutina(this.rutinaSeleccionada);
+        // La guardamos en Local Storage
+        localStorage.setItem('rutina', JSON.stringify(this.rutinaSeleccionada));
+        // Navegamos
         this.router.navigate(['/showrutine']);
       } catch (error) {
         console.error('Error al cargar el archivo JSON', error);

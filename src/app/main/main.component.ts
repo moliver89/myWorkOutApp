@@ -46,6 +46,5 @@ export class MainComponent {
     a.download = `${this.rutina.name || 'rutina'}.json`;
     a.click();
     window.URL.revokeObjectURL(url);
-    this.rutina.name = this.rutina.name;
   }
 }
