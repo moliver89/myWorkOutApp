@@ -1,0 +1,75 @@
+{
+  "name": "Fuerza Día 2",
+  "ejercicios": [
+    {
+      "name": "Dorsales",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 85
+    },
+    {
+      "name": "Remo",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 65
+    },
+    {
+      "name": "Press Hombros",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 26
+    },
+    {
+      "name": "Remo erguido",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 55
+    },
+    {
+      "name": "Vuelos laterales",
+      "sets": "3",
+      "reps": "12",
+      "pause": {
+        "min": "0",
+        "sec": "30"
+      },
+      "weight": 12
+    },
+    {
+      "name": "Triceps tras nuca c/manc",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 36
+    },
+    {
+      "name": "Triceps polea con barra",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 75
+    }
+  ]
+}

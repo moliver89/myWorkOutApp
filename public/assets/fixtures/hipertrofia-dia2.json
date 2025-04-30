@@ -1,0 +1,105 @@
+{
+  "name": "Hipertrofia Dia 2",
+  "ejercicios": [
+    {
+      "name": "Dominadas",
+      "sets": "4",
+      "reps": "8",
+      "pause": {
+        "min": "0",
+        "sec": 30
+      },
+      "weight": 0
+    },
+    {
+      "name": "Dorsales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 60
+    },
+    {
+      "name": "Remo",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 40
+    },
+    {
+      "name": "Remo alto",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": "30"
+      },
+      "weight": 55
+    },
+    {
+      "name": "Press hombros c/ manc",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": "00"
+      },
+      "weight": 22
+    },
+    {
+      "name": "Remo erguido",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 35
+    },
+    {
+      "name": "Vuelos laterales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 8
+    },
+    {
+      "name": "Vuelos frontales",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": "30"
+      },
+      "weight": 8
+    },
+    {
+      "name": "Biceps barra",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 25
+    },
+    {
+      "name": "Biceps con mancuernas",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "1",
+        "sec": "00"
+      },
+      "weight": 14
+    }
+  ]
+}

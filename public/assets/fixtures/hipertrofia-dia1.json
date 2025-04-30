@@ -1,15 +1,25 @@
 {
-  "name": "Hipertrofia",
+  "name": "Hipertrofia Dia 1",
   "ejercicios": [
     {
       "name": "Prensa",
       "sets": "4",
-      "reps": "10",
+      "reps": "8",
       "pause": {
         "min": "1",
         "sec": 30
       },
       "weight": 80
+    },
+    {
+      "name": "Sentadilla bulgara",
+      "sets": "4",
+      "reps": "10",
+      "pause": {
+        "min": "0",
+        "sec": "00"
+      },
+      "weight": 14
     },
     {
       "name": "Cuadriceps",
@@ -19,7 +29,7 @@
         "min": "1",
         "sec": 30
       },
-      "weight": 30
+      "weight": 40
     },
     {
       "name": "Isquiotibiales",
@@ -27,59 +37,39 @@
       "reps": "10",
       "pause": {
         "min": "1",
-        "sec": 30
-      },
-      "weight": 20
-    },
-    {
-      "name": "Press plano",
-      "sets": "4",
-      "reps": "10",
-      "pause": {
-        "min": "1",
-        "sec": 30
+        "sec": "00"
       },
       "weight": 60
     },
     {
-      "name": "Peck deck",
+      "name": "Press Plano en maquina",
       "sets": "4",
       "reps": "10",
       "pause": {
         "min": "1",
-        "sec": 30
+        "sec": "00"
       },
-      "weight": 45
+      "weight": 40
     },
     {
-      "name": "Dorsales",
+      "name": "Apertura 3 pos polea",
       "sets": "4",
       "reps": "10",
       "pause": {
-        "min": "1",
+        "min": "0",
         "sec": 30
       },
-      "weight": 50
+      "weight": 25
     },
     {
-      "name": "Vuelos laterales",
+      "name": "Triceps frances",
       "sets": "4",
       "reps": "10",
       "pause": {
-        "min": "1",
-        "sec": 30
+        "min": "0",
+        "sec": "00"
       },
-      "weight": 8
-    },
-    {
-      "name": "Biceps con mancuernas",
-      "sets": "4",
-      "reps": "10",
-      "pause": {
-        "min": "1",
-        "sec": 30
-      },
-      "weight": 12
+      "weight": 30
     },
     {
       "name": "Triceps soga",
@@ -87,7 +77,7 @@
       "reps": "10",
       "pause": {
         "min": "1",
-        "sec": 30
+        "sec": "00"
       },
       "weight": 35
     }

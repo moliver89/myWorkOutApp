@@ -1,0 +1,85 @@
+{
+  "name": "Fuerza Día 1",
+  "ejercicios": [
+    {
+      "name": "Prensa",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 0
+    },
+    {
+      "name": "Cuadriceps",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 60
+    },
+    {
+      "name": "Isquiotibiales",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 45
+    },
+    {
+      "name": "Aductores",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 80
+    },
+    {
+      "name": "Press declinado",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 100
+    },
+    {
+      "name": "Peck deck",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 120
+    },
+    {
+      "name": "Biceps w banco Scott",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 40
+    },
+    {
+      "name": "Skull Crushers",
+      "sets": "4",
+      "reps": "6",
+      "pause": {
+        "min": "2",
+        "sec": "00"
+      },
+      "weight": 40
+    }
+  ]
+}
