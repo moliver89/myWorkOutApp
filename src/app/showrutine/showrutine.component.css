@@ -36,13 +36,22 @@ input[type="number"] {
 @media (max-width: 600px) {
   .rutina-container {
     max-width: 90%;
+    align-items: center;
+    text-align: center;
   }
   table {
+    width: 90%;
     font-size: 0.9rem;
     padding: 0;
   }
   button {
     display: flex;
     align-items: center;
+  }
+
+  .inputs-pause{
+    display: flex;
+    justify-content: left;
+    min-width: 40px;
   }
 }
