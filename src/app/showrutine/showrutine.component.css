@@ -54,4 +54,8 @@ input[type="number"] {
     justify-content: left;
     min-width: 40px;
   }
+  .boton-descarga {
+    margin: 12px;
+  }
+
 }
